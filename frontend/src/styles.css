@@ -1,0 +1,76 @@
+/* ========= Global Dark Theme ========= */
+@import "tailwindcss";
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #0f172a; /* Deep navy blue */
+  color: #e6eef8; /* Soft white */
+  margin: 0;
+  padding: 0;
+}
+
+/* ========= Container ========= */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #071029;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* ========= Input Fields ========= */
+input {
+  padding: 10px;
+  margin: 8px 0;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #19314a;
+  background: #071e2f;
+  color: #e6eef8;
+  outline: none;
+}
+
+input:focus {
+  border-color: #3b82f6; /* Tailwind’s blue-500 */
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
+}
+
+/* ========= Buttons ========= */
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: #2563eb; /* Tailwind blue-600 */
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #1d4ed8; /* Darker blue */
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.5);
+}
+
+/* ========= Anchor Links ========= */
+a {
+  color: #93c5fd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #60a5fa; /* Lighter blue */
+}
+
+/* ========= Glow Effect ========= */
+.glow-btn:hover {
+  box-shadow: 0 0 20px rgba(96, 165, 250, 0.6);
+  transform: translateY(-2px);
+}
+
+/* ========= Smooth Animation ========= */
+* {
+  transition: all 0.3s ease-in-out;
+}
